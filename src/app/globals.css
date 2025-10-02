@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --color-hover: black;
+  --color-primary: #9B5126;
+  --color-secondary: ivory;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-montserrat), sans-serif;
+  color: black;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-lora), serif;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+h5 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+section{
+  width: 100%;
+}
+
+.ohmy,
+#whyUs,
+#mission,
+#aboutUs {
+  p {
+    margin-bottom: 1rem;
+  }
+
+  li {
+    margin-left: 1.5rem;
+    list-style-type: disc;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+    position: relative;
+  }
+}
+
+.ohmy h1{
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+    left: 0;
+    bottom: -0.5rem;
+  }
+}
+
+p:has(> strong) {
+  margin-bottom: 0 !important;
+}
