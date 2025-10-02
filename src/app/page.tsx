@@ -14,6 +14,8 @@ const POSTS_QUERY = `*[ _type == "directions" ]{_id, title_ru, image, content_ru
 const MAIN_QUERY = `*[_type == "mainType" ]{_id, title_ru, image, content_ru} | order(_createdAt desc)`;
 const CONTACTS_QUERY = `*[_type == "contactsType" ]{_id, content_ru, order} | order(order asc)`;
 
+export const dynamic = "force-dynamic"; 
+
 export default async function Home() {
   let odd: boolean = false;
   const posts = await client.fetch<SanityDocument[]>(POSTS_QUERY);
