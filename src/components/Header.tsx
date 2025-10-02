@@ -43,7 +43,7 @@ export default function Header({posts, body, eng}: {posts: SanityDocument[], bod
         `}>
         <Image
           src="/logo.webp"
-          alt="OhMyBali Logo"
+          alt="OhMyalma Logo"
           className={`w-auto object-contain transition-[height, opacity] duration-300 ease-in
             ${scrollY>0 ? 'h-12' : 'h-auto'} ${ready ? 'opacity-100' : 'opacity-0'}`}
           width={1240}
