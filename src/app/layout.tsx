@@ -16,7 +16,7 @@ const montserrat = Montserrat({
 
 export const metadata: Metadata = {
   title: "ohmyalma",
-  description: "ПРИНИМАЮЩАЯ СТОРОНА И ВДОХНОВЛЯЮЩИЕ ПУТЕШЕСТВИЯ НА БАЛИ",
+  description: "EVENT MANAGEMENT & EXPERIENCES",
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
         <link rel="manifest" href="/favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="msapplication-TileColor" content="#9B5126" />
         <meta name="theme-color" content="#ffffff" />
       </head>
       <body className={`${montserrat.variable} ${lora.variable} antialiased`}>
